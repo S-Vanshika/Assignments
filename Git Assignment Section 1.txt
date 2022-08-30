@@ -1,0 +1,54 @@
+--21.First take a backup of your assignments & projects.This is requifred because due to incorrect GIT operation you may lose your files.
+Backup taken.
+
+--22. Create an empty directory'Assignments' and cd to it
+$ mkdir Assignments && cd Assignments
+
+--23. Create a README.txt and write few lines inside it.
+$ touch README.txt
+
+--24. Commit README.txt file.
+$ git add README.txt && git commit -m "Readme,txt added"
+
+--25. Create a new branch 'html-assignments'.
+$ git branch html-assignments
+
+--26. Switch to 'html-assignments'
+$ git checkout html-assignments
+
+--27. Copy all in Assignments inside 'Assignments' folder.
+$ git checkout master -- HTML_Assignments
+
+--28. Commit HTML assignments into 'html-assignments' branch.
+$ git add . && git commit -m "HTML_Assignments is submitted"
+
+--29. Make changes in files.
+CHANGES HAVE BEEN MADE
+
+--30. Commit those changed files.
+$ git add . && git commit -m "HTML_Assignments file is changed"
+
+--31. Switch to master branch.
+$ git checkout master
+
+--32. Make changes into README.txt file and commit into master.
+CHANGE MADE IN VS CODE
+$ git add . && git commit -m "README file is modified"
+
+--33. Again switch to 'html-assignments' branch.
+$ git checkout html-assignments
+
+--34. Make changes to files.
+CHANGE MADE
+
+--35. Commit those changes.
+$ git add . && git commit -m "HTML_Assignments is now submitted"
+
+--36. Switch to master.
+$ git checkout master
+
+--37. Merge 'html-assignments' to master.
+$ git merge html-assignments
+
+--38. Finally delete 'html-assignments' branch.
+$ git branch -d html-assignments
