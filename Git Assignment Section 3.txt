@@ -1,0 +1,42 @@
+--1. Create a new branch 'js-assignments'.
+$ git branch js-assignments
+
+--2. Switch to 'js-assignments'
+$ git checkout js-assignments
+
+--3. Copy all in Assignments inside 'Assignments' folder.
+$ git checkout master -- JS_Assignments
+
+--4. Commit JS assignments into 'js-assignments' branch.
+$ git add . && git commit -m "JS_Assignments submitted"
+
+--5. Make changes in files.
+CHANGED USING VS CODE
+
+--6. Commit those changed files.
+$ git add . && git commit -m "JS_Assignments modified"
+
+--7. Switch to master branch.
+$ git checkout master
+
+--8. Make changes into README.txt file and commit into master.
+CHANGED USING VS CODE
+$ git add . && git commit -m "README modified"
+
+--9. Again switch to 'js-assignments' branch.
+$ git checkout js-assignments
+
+--10. Make changes to files.
+CHANGED USING VS CODE
+
+--11. Commit those changes.
+$ git add . && git commit -m "Final JS_Assignments submitted"
+
+--12. Switch to master.
+$ git checkout master
+
+--13. Merge 'js-assignments' to master.
+$ git merge js-assignments
+
+--14. Finally delete 'js-assignments' branch.
+$ git branch -d js-assignments
