@@ -1,0 +1,42 @@
+--1. Create a new branch 'css-assignments'.
+$ git branch css-assignments
+
+--2. Switch to 'css-assignments'
+$ git checkout css-assignments
+
+--3. Copy all in Assignments inside 'Assignments' folder.
+$ git checkout master -- CSS_Assignments
+
+--4. Commit CSS assignments into 'css-assignments' branch.
+$ git add . && git commit -m "CSS_Assignments submitted"
+
+--5. Make changes in files.
+CHANGE MADE
+
+--6. Commit those changed files.
+$ git add . && git commit -m "CSS_Assignments is changed"
+
+--7. Switch to master branch.
+$ git checkout master
+
+--8. Make changes into README.txt file and commit into master.
+CHANGE MADE
+$ git add . && git commit -m "README is modified"
+
+--9. Again switch to 'css-assignments' branch.
+$ git checkout css-assignments
+
+--10. Make changes to files.
+CHANGE MADE
+
+--11. Commit those changes.
+$ git add . && git commit -m "CSS_Assignments is now submitted"
+
+--12. Switch to master.
+$ git checkout master
+
+--13. Merge 'css-assignments' to master.
+$ git merge css-assignments
+
+--14. Finally delete 'css-assignments' branch.
+$ git branch -d css-assignments
